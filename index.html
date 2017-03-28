@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/master.css">
     <title>VueJs Playground</title>
   </head>
   <body>
@@ -9,7 +10,6 @@
       <h1 v-bind:title="message" v-on:click="greet()">{{title}}</h1>
       <p v-if="showHello" class="green"> Hallo Niklas </p>
       <p v-else>Hallo Tim</p>
-      <p>Hallo</p>
       <ul>
         <li v-for="link in links"><a v-bind:href="link.url" target="_blank" >{{link.title}}</a></li>
       </ul>

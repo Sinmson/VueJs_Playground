@@ -22,7 +22,7 @@ var app = new Vue({
         url : "http:store.steampowered.com"
       }
     ],
-    showHello : false
+    showHello : true
   },
   methods: {
     greet : function() {
