@@ -4,6 +4,8 @@
   "description": "A playground vor my VueJs Applications. More a testing server.",
   "main": "app.js",
   "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3",
     "vue": "^2.2.6"
   },
   "devDependencies": {},
@@ -18,7 +20,7 @@
   "author": "Tim Pütz",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Sinmson/VueJs_Playground.git"
+    "type": "git",
+    "url": "https://github.com/Sinmson/VueJs_Playground.git"
   }
 }
