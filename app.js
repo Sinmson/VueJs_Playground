@@ -11,7 +11,7 @@ var app = new Vue({
       },
       {
         title : "Twitter",
-        url : "http:twitter.de",
+        url : "http:twitter.de"
       },
       {
         title : "Google",
