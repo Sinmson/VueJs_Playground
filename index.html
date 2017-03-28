@@ -5,6 +5,13 @@
     <title>VueJs Playground</title>
   </head>
   <body>
-
+    <div id="app" class="">
+      <h1 v-bind:title="message" v-on:click="greet()">{{title}}</h1>
+      <ul>
+        <li v-for="link in links"><a v-bind:href="link.url" target="_blank" >{{link.title}}</a></li>
+      </ul>
+    </div>
+    <script src=".\node_modules\vue\dist\vue.js"></script>
+    <script src=".\app.js"></script>
   </body>
 </html>
