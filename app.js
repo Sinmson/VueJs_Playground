@@ -16,12 +16,12 @@ var app = new Vue({
         title : "Google",
         url : "http:google.de"
       }
-    ]
+    ],
+    showHello : false
   },
   methods: {
     greet : function() {
       alert('Let´s go!');
     }
-
   }
 })
