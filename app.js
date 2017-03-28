@@ -3,6 +3,7 @@ var app = new Vue({
   data: {
     title : "This is a title",
     message : "This is a default message",
+    showHello : false,
     links : [
       {
         title : "Youtube",
