@@ -2,11 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="./css/app.css">
     <title>VueJs Playground</title>
-    <script src=".\node_modules\vue\dist\vue.js"></script>
-    <script src=".\app.js"></script>
-    <script src=".\node_modules\socket.io-client\dist\socket.io.js"></script>
   </head>
   <body>
     <div id="app" class="">
@@ -17,5 +14,11 @@
         <li v-for="link in links"><a v-bind:href="link.url" target="_blank" >{{link.title}}</a></li>
       </ul>
     </div>
+
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="./TicTacToe.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

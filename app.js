@@ -1,32 +1,38 @@
-var app = new Vue({
-  el: "#app",
-  data: {
-    title : "This is a title",
-    message : "This is a default message",
-    showHello : false,
-    links : [
-      {
-        title : "Youtube",
-        url : "http:youtube.de"
+window.onload = function() {
+
+  var socket = io.connect();
+
+  var app = new Vue({
+    el: "#app",
+    data: {
+      Usernames = [],
+      PlayerUser = '',
+      EnemyPlayerUser = '',
+      TicTacToeM = new TicTacToe();
+      Chatmessages = [],
+      enemyFound = false,
+      playerWon = false,
+      isTie = false,
+      WonPlayername = ''
+      /*
+      Chatmessage = {
+      user : 'Fritz',
+      message : 'Penis'},
+      */
+    },
+    methods: {
+      sendMessage : function( message ) {
+        //PlayerUser sendet die Nachricht "message" an EnemyPlayerUser
+        //Rückgabe : Keine Parameter
+
       },
-      {
-        title : "Twitter",
-        url : "http:twitter.de"
+      sendMove : function ( fieldNr ) {
+        //PlayerUser sendet seinen Zug an EnemyPlayerUser
+
       },
-      {
-        title : "Google",
-        url : "http:google.de"
-      },
-      {
-        title : "Steam",
-        url : "http:store.steampowered.com"
+      fieldPressed : function ( fieldNr ) {
+        //Zug prüfen -> Spielfeld aktualisieren -> Zug senden
       }
-    ],
-    showHello : true
-  },
-  methods: {
-    greet : function() {
-      alert('Let´s go!');
     }
-  }
-})
+  })
+};
