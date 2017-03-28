@@ -16,6 +16,10 @@ var app = new Vue({
       {
         title : "Google",
         url : "http:google.de"
+      },
+      {
+        title : "Steam",
+        url : "http:store.steampowered.com"
       }
     ],
     showHello : false
