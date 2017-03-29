@@ -5,15 +5,15 @@ window.onload = function() {
   var app = new Vue({
     el: "#app",
     data: {
-      Usernames = [],
-      PlayerUser = '',
-      EnemyPlayerUser = '',
-      TicTacToeM = new TicTacToe();
-      Chatmessages = [],
-      enemyFound = false,
-      playerWon = false,
-      isTie = false,
-      WonPlayername = ''
+      Usernames : [],
+      PlayerUser : '',
+      EnemyPlayerUser : '',
+      TicTacToeM : new TicTacToe(),
+      Chatmessages : [],
+      enemyFound : false,
+      playerWon : false,
+      isTie : false,
+      WonPlayername : ''
       /*
       Chatmessage = {
       user : 'Fritz',

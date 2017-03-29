@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./node_modules/material-design-lite/dist/material.min.css"></script>
     <title>VueJs Playground</title>
   </head>
   <body>
     <div id="app" class="">
-      <h1 v-bind:title="message" v-on:click="greet()">{{title}}</h1>
-      <p v-if="showHello" class="green"> Hallo Niklas </p>
-      <p v-else>Hallo Tim</p>
-      <ul>
-        <li v-for="link in links"><a v-bind:href="link.url" target="_blank" >{{link.title}}</a></li>
-      </ul>
+      <mdl-button>Button</mdl-button>
     </div>
 
 
-    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./node_modules/material-design-lite/dist/material.min.js"></script>
+    <script src="./node_modules/vue-mdl/dist/vue-mdl.min.js"></script>
     <script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
     <script src="./TicTacToe.js"></script>
-    <script src="./app.js"></script>
+    <script src="./client.js"></script>
   </body>
 </html>

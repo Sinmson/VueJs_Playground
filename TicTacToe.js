@@ -96,5 +96,4 @@ var TicTacToe = function(  ) {
 
     return false;
   }
-
-});
+};
